@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Gallery</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__profile profile">
+      <img src="img/user-avatar.jpg" alt="" class="profile-photo">
+      <div class="profile-text">
+        <div class="profile-text_name">koniziwa</div>
+        <div class="profile-text__subtext">
+          <div class="profile-text__subtext_point"></div>
+          <div class="profile-text__subtext_status">Premium</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__search-bar search-bar">
+      <input type="text" class="search-bar_input" placeholder="Search">
+      <button class="search-bar_button">
+        <img src="img/search.svg" class="search-bar_ico">
+      </button>
+    </div>
+    <button class="header__swap-button">
+      <img src="img/folder.svg" alt="" class="header__swap-ico">
+    </button>
+  </header>
+
+  <main class="main">
+    <section class="songs-list">
+    </section>
+    <section class="liked-songs">
+      <img src="./img/liked-songs-2.jpg" alt="" class="liked-songs-img">
+      <div class="liked-songs-list__bottom">
+        <div class="liked-songs-title">
+          Liked songs
+        </div>
+        <div class="liked-songs-list">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <audio class="js-audio" src=""></audio>
+    <div data-songname="" class="footer__song song">
+    </div>
+    <div class="footer__bar bar">
+      <div class="bar__buttons buttons">
+        <button class="buttons__container_shuffle-button">
+          <img src="img/shuffle.svg" alt="" class="buttons_shuffle-button">
+        </button>
+        <button class="buttons__container_prev-button">
+          <img src="img/prev.svg" alt="" class="buttons_prev-button">
+        </button>
+        <button class="buttons__container_play-button">
+          <img src="img/play.svg" alt="" class="buttons_play-button">
+        </button>
+        <button class="buttons__container_next-button">
+          <img src="img/next.svg" alt="" class="buttons_next-button">
+        </button>
+        <button class="buttons__container_loop-button">
+          <img src="img/loop.svg" alt="" class="buttons_loop-button">
+        </button>
+      </div>
+      <div class="bar__all">
+        <div class="bar_start-time"></div>
+        <div class="bar_full">
+          <div class="bar_part"></div>
+        </div>
+        <div class="bar_end-time"></div>
+      </div>
+    </div>
+    <div class="footer__volume">
+      <img src="img/volume.svg" alt="" class="footer__volume-ico">
+      <div class="footer__volume_full">
+        <div class="footer__volume_part">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/songs-list.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
